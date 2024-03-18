@@ -19,7 +19,9 @@ def input_countdown(seconds):
     if timer_end - timer_start <= seconds:
         return my_choice
     else:
-        return 'timeout'
+        print("시간초과")
+        return 'timeout'    
+    
 
 
 def determine_winner(me_choice, computer_choice, my_choice):
@@ -37,9 +39,9 @@ def determine_winner(me_choice, computer_choice, my_choice):
             return '게임에 패배하셨습니다!'
     else:
         if my_choice == '이겼다':
-            return '게임에 승리하셨습니다!'
-        else:
             return '게임에 패배하셨습니다!'
+        else:
+            return '게임에 승리하셨습니다!'
 
 def play_game():
     me_choice = get_me_choice()
@@ -54,3 +56,4 @@ while True:
     choice = input("게임을 다시 하려면 1, 그만하려면 2를 누르세요: ")
     if choice == '2':
         break
+
