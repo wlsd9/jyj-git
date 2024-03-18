@@ -34,14 +34,14 @@ def determine_winner(me_choice, computer_choice, my_choice):
          (me_choice == '바위' and computer_choice == '가위') or \
          (me_choice == '보' and computer_choice == '바위'):
         if my_choice == '졌다':
-            return '게임에 승리하셨습니다!'
+            return '게임에 승리하셨습니다!' 
         else:
             return '게임에 패배하셨습니다!'
     else:
         if my_choice == '이겼다':
-            return '게임에 패배하셨습니다!'
-        else:
             return '게임에 승리하셨습니다!'
+        else:
+            return '게임에 패배하셨습니다!'
 
 def play_game():
     me_choice = get_me_choice()
