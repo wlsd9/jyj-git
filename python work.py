@@ -20,7 +20,7 @@ def input_countdown(seconds):
         return my_choice
     else:
         print("시간초과!")
-        return 'timeout'    
+           
     
 
 
