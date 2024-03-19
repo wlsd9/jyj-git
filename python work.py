@@ -55,5 +55,6 @@ while True:
     play_game()
     choice = input("게임을 다시 하려면 1, 그만하려면 2를 누르세요: ")
     if choice == '2':
+        print("게임을 종료합니다.")
         break
-
+    
